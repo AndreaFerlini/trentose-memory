@@ -10,16 +10,81 @@ var tmp2;
 // hidden: when the card has not been discovered yet
 
 $(document).ready(function(){
+    var n=0;
     for (var i=0; i<10; i++){
-        tmp1=tmp.replace("numb", i);
+        tmp1=tmp.replace("numb", data[i]);
         tmp2=tmp1.replace("value", data[i]);
         $(".cards").append(tmp2);
     }
     
     $(".opt-start").click(function(){
             $(".done").addClass("hidden");
+            $(".hidden").removeClass("done");
+    
+        $("#1").click(function(){
+            //console.log("user clicked");
+            $("#1").addClass("done");
+            $(".done").removeClass("hidden");
+            if (n==0){n++;}else{alert("You lost");}
+        });
+        $("#2").click(function(){
+            //console.log("user clicked");
+            $("#2").addClass("done");
+            $(".done").removeClass("hidden");
+            if (n==1){n++;}else{alert("You lost");}
+        });
+        $("#3").click(function(){
+            //console.log("user clicked");
+            $("#3").addClass("done");
+            $(".done").removeClass("hidden");
+            if (n==2){n++;}else{alert("You lost");}
+        });
+        $("#4").click(function(){
+            //console.log("user clicked");
+            $("#4").addClass("done");
+            $(".done").removeClass("hidden");
+            if (n==3){n++;}else{alert("You lost");}
+        });
+        $("#5").click(function(){
+            //console.log("user clicked");
+            $("#5").addClass("done");
+            $(".done").removeClass("hidden");
+            if (n==4){n++;}else{alert("You lost");}
+        });
+        $("#6").click(function(){
+            //console.log("user clicked");
+            $("#6").addClass("done");
+            $(".done").removeClass("hidden");
+            if (n==5){n++;}else{alert("You lost");}
+        });
+        $("#7").click(function(){
+            //console.log("user clicked");
+            $("#7").addClass("done");
+            $(".done").removeClass("hidden");
+            if (n==6){n++;}else{alert("You lost");}
+        });
+        $("#8").click(function(){
+            //console.log("user clicked");
+            $("#8").addClass("done");
+            $(".done").removeClass("hidden");
+            if (n==7){n++;}else{alert("You lost");}
+        });
+        $("#9").click(function(){
+            //console.log("user clicked");
+            $("#9").addClass("done");
+            $(".done").removeClass("hidden");
+            if (n==8){n++;}else{alert("You lost");}
+        });
+        $("#10").click(function(){
+            //console.log("user clicked");
+            $("#10").addClass("done");
+            $(".done").removeClass("hidden");
+            if (n==9){alert("You Win");}else{alert("You lost");}
+        });
+        
     });
     
+
     
   
 });
