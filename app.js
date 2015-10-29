@@ -25,61 +25,107 @@ $(document).ready(function(){
             //console.log("user clicked");
             $("#1").addClass("done");
             $(".done").removeClass("hidden");
-            if (n==0){n++;}else{alert("You lost");}
+            if (n==0){n++;}else{
+                    alert("You lost");
+                    $(".done").hide();
+                    $(".hidden").hide();
+                    $(".opt-start").hide();
+                    $(".cards").append("<center><strong>Reload the page to play again</strong></center>");
+                }
         });
         $("#2").click(function(){
             //console.log("user clicked");
             $("#2").addClass("done");
             $(".done").removeClass("hidden");
-            if (n==1){n++;}else{alert("You lost");}
+            if (n==1){n++;}else{alert("You lost");
+                    $(".done").hide();
+                    $(".hidden").hide();
+                    $(".opt-start").hide();
+                    $(".cards").append("<center><strong>Reload the page to play again</strong></center>");}
         });
         $("#3").click(function(){
             //console.log("user clicked");
             $("#3").addClass("done");
             $(".done").removeClass("hidden");
-            if (n==2){n++;}else{alert("You lost");}
+            if (n==2){n++;}else{alert("You lost");
+                    $(".done").hide();
+                    $(".hidden").hide();
+                    $(".opt-start").hide();
+                    $(".cards").append("<center><strong>Reload the page to play again</strong></center>");}
         });
         $("#4").click(function(){
             //console.log("user clicked");
             $("#4").addClass("done");
             $(".done").removeClass("hidden");
-            if (n==3){n++;}else{alert("You lost");}
+            if (n==3){n++;}else{alert("You lost");
+                    $(".done").hide();
+                    $(".hidden").hide();
+                    $(".opt-start").hide();
+                    $(".cards").append("<center><strong>Reload the page to play again</strong></center>");}
         });
         $("#5").click(function(){
             //console.log("user clicked");
             $("#5").addClass("done");
             $(".done").removeClass("hidden");
-            if (n==4){n++;}else{alert("You lost");}
+            if (n==4){n++;}else{alert("You lost");
+                    $(".done").hide();
+                    $(".hidden").hide();
+                    $(".opt-start").hide();
+                    $(".cards").append("<center><strong>Reload the page to play again</strong></center>");}
         });
         $("#6").click(function(){
             //console.log("user clicked");
             $("#6").addClass("done");
             $(".done").removeClass("hidden");
-            if (n==5){n++;}else{alert("You lost");}
+            if (n==5){n++;}else{alert("You lost");
+                    $(".done").hide();
+                    $(".hidden").hide();
+                    $(".opt-start").hide();
+                    $(".cards").append("<center><strong>Reload the page to play again</strong></center>");}
         });
         $("#7").click(function(){
             //console.log("user clicked");
             $("#7").addClass("done");
             $(".done").removeClass("hidden");
-            if (n==6){n++;}else{alert("You lost");}
+            if (n==6){n++;}else{alert("You lost");
+                    $(".done").hide();
+                    $(".hidden").hide();
+                    $(".opt-start").hide();
+                    $(".cards").append("<center><strong>Reload the page to play again</strong></center>");}
         });
         $("#8").click(function(){
             //console.log("user clicked");
             $("#8").addClass("done");
             $(".done").removeClass("hidden");
-            if (n==7){n++;}else{alert("You lost");}
+            if (n==7){n++;}else{alert("You lost");
+                    $(".done").hide();
+                    $(".hidden").hide();
+                    $(".opt-start").hide();
+                    $(".cards").append("<center><strong>Reload the page to play again</strong></center>");}
         });
         $("#9").click(function(){
             //console.log("user clicked");
             $("#9").addClass("done");
             $(".done").removeClass("hidden");
-            if (n==8){n++;}else{alert("You lost");}
+            if (n==8){n++;}else{alert("You lost");
+                    $(".done").hide();
+                    $(".hidden").hide();
+                    $(".opt-start").hide();
+                    $(".cards").append("<center><strong>Reload the page to play again</strong></center>");}
         });
         $("#10").click(function(){
             //console.log("user clicked");
             $("#10").addClass("done");
             $(".done").removeClass("hidden");
-            if (n==9){alert("You Win");}else{alert("You lost");}
+            if (n==9){alert("You Won");
+                    $(".done").hide();
+                    $(".hidden").hide();
+                    $(".opt-start").hide();
+                    $(".cards").append("<center><strong>YOU WON! Reload the page to play again</strong></center>");}else{alert("You lost");
+                    $(".done").hide();
+                    $(".hidden").hide();
+                    $(".opt-start").hide();
+                    $(".cards").append("<center><strong>Reload the page to play again</strong></center>");}
         });
         
     });
